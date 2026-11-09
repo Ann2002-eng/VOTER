@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Register | E-School Voting</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="card" role="main" aria-labelledby="reg-title">
+      <h1 id="reg-title">Voter Registration</h1>
+      <p class="sub">Create your account to participate in the election.</p>
+
+      <form class="registration-form" action="process.php" method="POST" novalidate>
+        <div>
+          <label for="fname">First name</label>
+          <input id="fname" name="fname" type="text" placeholder="John" required>
+        </div>
+
+        <div>
+          <label for="lname">Last name</label>
+          <input id="lname" name="lname" type="text" placeholder="Doe" required>
+        </div>
+
+        <div class="full">
+          <label for="pmail">Email address</label>
+          <input id="pmail" name="pmail" type="email" placeholder="you@example.com" required>
+        </div>
+
+        <div>
+          <label for="idn">ID / Passport No.</label>
+          <input id="idn" name="idn" type="text" placeholder="12345678" required>
+        </div>
+
+        <div>
+          <label for="phoneno">Phone number</label>
+          <input id="phoneno" name="phoneno" type="tel" placeholder="07XX XXX XXX" required>
+        </div>
+
+        <div>
+          <label for="pass">Password</label>
+          <input id="pass" name="pass" type="password" placeholder="Create a strong password" required>
+        </div>
+
+        <div>
+          <label for="cpass">Confirm password</label>
+          <input id="cpass" name="cpass" type="password" placeholder="Repeat password" required>
+        </div>
+
+        <div class="note">Passwords must match and be at least 8 characters.</div>
+
+        <div class="actions">
+          <button type="reset" class="btn secondary">Reset</button>
+          <button type="submit" name="submit_btn" class="btn">Register to Vote</button>
+        </div>
+        <div class="login-note">Already have an account? <a href="login.php">Login here</a></div>
+      </form>
+    </main>
+  </body>
+</html>
